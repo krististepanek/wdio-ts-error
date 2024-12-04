@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": true,
+    "outDir": "./dist",
+    "paths": {
+      "pages/*": ["./test/page/*"],
+    },
+    "types": [
+      "node",
+      "@wdio/types", 
+      "@wdio/globals/types", 
+      "@wdio/mocha-framework", 
+      "@wdio/appium-service",
+      "@wdio/browserstack-service"
+    ]
+  },
+  "include": [
+    "./test/**/*.ts"
+  ]
+}
